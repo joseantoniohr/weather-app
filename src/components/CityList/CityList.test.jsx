@@ -15,7 +15,7 @@ test("CityList renders", async () => {
 
     const { findAllByRole } = render(<CityList cities={cities} onClickCity={fnClickOnItem} />)
 
-    const items = await findAllByRole("listitem")
+    const items = await findAllByRole("button")
 
     expect(items).toHaveLength(4)
 })
@@ -27,7 +27,7 @@ test("CityList click on item", async () => {
 
     const { findAllByRole } = render(<CityList cities={cities} onClickCity={fnClickOnItem} />)
 
-    const items = await findAllByRole("listitem")
+    const items = await findAllByRole("button")
     // Simulamos la acción con el fireEvent
     fireEvent.click(items[0])
 

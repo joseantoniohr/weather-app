@@ -5,7 +5,6 @@ import { WiCloud,
   WiDayFog,
   WiDaySunny,
   WiRain } from 'react-icons/wi'
-import { IconContext } from 'react-icons'
 
 export const validValues = [
   "cloud",
