@@ -1,6 +1,7 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import { useHistory } from 'react-router-dom' 
+import Paper from '@material-ui/core/Paper'
+import AppFrame from './../components/AppFrame'
 import CityList from './../components/CityList'
 
 const cities = [
@@ -17,15 +18,12 @@ const MainPage = () => {
   }
 
   return (
-    <div>
-      <h2>Lista de Ciudades</h2>
-      <CityList cities={cities} onClickCity={onClickHandler} />
-    </div>
+    <AppFrame>
+      <Paper elevation={3}>
+        <CityList cities={cities} onClickCity={onClickHandler} />
+      </Paper>
+    </AppFrame>
   )
-}
-
-MainPage.propTypes = {
-
 }
 
 export default MainPage
