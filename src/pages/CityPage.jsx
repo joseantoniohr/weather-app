@@ -1,6 +1,4 @@
 import React from 'react'
-import PropTypes from 'prop-types'
-import { Link } from 'react-router-dom'
 import Grid from '@material-ui/core/Grid'
 import AppFrame from './../components/AppFrame'
 import CityInfo from './../components/CityInfo'
@@ -81,10 +79,6 @@ const CityPage = () => {
       </Grid>
     </AppFrame>
   )
-}
-
-CityPage.propTypes = {
-
 }
 
 export default CityPage
